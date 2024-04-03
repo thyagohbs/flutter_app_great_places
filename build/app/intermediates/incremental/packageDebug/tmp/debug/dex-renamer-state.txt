@@ -1,0 +1,4 @@
+#Fri Mar 29 20:42:52 BRT 2024
+base.0=/home/thyago/Projetos/flutter_app_great_places-main/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

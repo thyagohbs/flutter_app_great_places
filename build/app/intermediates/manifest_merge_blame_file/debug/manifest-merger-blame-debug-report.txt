@@ -1,0 +1,240 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_app_great_places"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/debug/AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:2:5-77
+16-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:2:22-74
+17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+17-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:3:5-84
+17-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:3:22-82
+18    <!--
+19 Required to query activities that can process text, see:
+20         https://developer.android.com/training/package-visibility?hl=en and
+21         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+22
+23         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+24    -->
+25    <queries>
+25-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:45:5-50:15
+26        <intent>
+26-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:46:9-49:18
+27            <action android:name="android.intent.action.PROCESS_TEXT" />
+27-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:47:13-72
+27-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:47:21-70
+28
+29            <data android:mimeType="text/plain" />
+29-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:48:13-50
+29-->/home/thyago/Projetos/flutter_app_great_places-main/android/app/src/main/AndroidManifest.xml:48:19-48
+30        </intent>
+31        <!-- Needs to be explicitly declared on Android R+ -->
+32        <package android:name="com.google.android.apps.maps" />
+32-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+32-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+33    </queries>
+34
+35    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+35-->[:location] /home/thyago/Projetos/flutter_app_great_places-main/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+35-->[:location] /home/thyago/Projetos/flutter_app_great_places-main/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+36    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+36-->[:location] /home/thyago/Projetos/flutter_app_great_places-main/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-79
+36-->[:location] /home/thyago/Projetos/flutter_app_great_places-main/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-76
+37    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+37-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
+37-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:22-76
+38
+39    <uses-feature
+39-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+40        android:glEsVersion="0x00020000"
+40-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+41        android:required="true" />
+41-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+42
+43    <permission
+43-->[androidx.core:core:1.10.1] /home/thyago/.gradle/caches/transforms-3/53e1c90acc2736ef9d388444ed595ca9/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+44        android:name="com.example.flutter_app_great_places.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.10.1] /home/thyago/.gradle/caches/transforms-3/53e1c90acc2736ef9d388444ed595ca9/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.10.1] /home/thyago/.gradle/caches/transforms-3/53e1c90acc2736ef9d388444ed595ca9/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.example.flutter_app_great_places.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.10.1] /home/thyago/.gradle/caches/transforms-3/53e1c90acc2736ef9d388444ed595ca9/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.10.1] /home/thyago/.gradle/caches/transforms-3/53e1c90acc2736ef9d388444ed595ca9/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+48
+49    <application
+50        android:name="android.app.Application"
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.10.1] /home/thyago/.gradle/caches/transforms-3/53e1c90acc2736ef9d388444ed595ca9/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+52        android:debuggable="true"
+53        android:icon="@mipmap/ic_launcher"
+54        android:label="flutter_app_great_places" >
+55        <meta-data
+56            android:name="com.google.android.geo.API_KEY"
+57            android:value="YOUR KEY HERE" />
+58
+59        <activity
+60            android:name="com.example.flutter_app_great_places.MainActivity"
+61            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+62            android:exported="true"
+63            android:hardwareAccelerated="true"
+64            android:launchMode="singleTop"
+65            android:theme="@style/LaunchTheme"
+66            android:windowSoftInputMode="adjustResize" >
+67
+68            <!--
+69                 Specifies an Android theme to apply to this Activity as soon as
+70                 the Android process has started. This theme is visible to the user
+71                 while the Flutter UI initializes. After that, this theme continues
+72                 to determine the Window background behind the Flutter UI.
+73            -->
+74            <meta-data
+75                android:name="io.flutter.embedding.android.NormalTheme"
+76                android:resource="@style/NormalTheme" />
+77
+78            <intent-filter>
+79                <action android:name="android.intent.action.MAIN" />
+80
+81                <category android:name="android.intent.category.LAUNCHER" />
+82            </intent-filter>
+83        </activity>
+84        <!--
+85             Don't delete the meta-data below.
+86             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+87        -->
+88        <meta-data
+89            android:name="flutterEmbedding"
+90            android:value="2" />
+91
+92        <provider
+92-->[:image_picker_android] /home/thyago/Projetos/flutter_app_great_places-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+93            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+93-->[:image_picker_android] /home/thyago/Projetos/flutter_app_great_places-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+94            android:authorities="com.example.flutter_app_great_places.flutter.image_provider"
+94-->[:image_picker_android] /home/thyago/Projetos/flutter_app_great_places-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+95            android:exported="false"
+95-->[:image_picker_android] /home/thyago/Projetos/flutter_app_great_places-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+96            android:grantUriPermissions="true" >
+96-->[:image_picker_android] /home/thyago/Projetos/flutter_app_great_places-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+97            <meta-data
+97-->[:image_picker_android] /home/thyago/Projetos/flutter_app_great_places-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+98                android:name="android.support.FILE_PROVIDER_PATHS"
+98-->[:image_picker_android] /home/thyago/Projetos/flutter_app_great_places-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+99                android:resource="@xml/flutter_image_picker_file_paths" />
+99-->[:image_picker_android] /home/thyago/Projetos/flutter_app_great_places-main/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+100        </provider>
+101
+102        <service
+102-->[:location] /home/thyago/Projetos/flutter_app_great_places-main/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:56
+103            android:name="com.lyokone.location.FlutterLocationService"
+103-->[:location] /home/thyago/Projetos/flutter_app_great_places-main/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-71
+104            android:enabled="true"
+104-->[:location] /home/thyago/Projetos/flutter_app_great_places-main/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-35
+105            android:exported="false"
+105-->[:location] /home/thyago/Projetos/flutter_app_great_places-main/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+106            android:foregroundServiceType="location" /> <!-- Needs to be explicitly declared on P+ -->
+106-->[:location] /home/thyago/Projetos/flutter_app_great_places-main/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-53
+107        <uses-library
+107-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+108            android:name="org.apache.http.legacy"
+108-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+109            android:required="false" />
+109-->[com.google.android.gms:play-services-maps:18.2.0] /home/thyago/.gradle/caches/transforms-3/8d73d6bc87c76ecf5b018fac93b410d1/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+110
+111        <activity
+111-->[com.google.android.gms:play-services-base:18.1.0] /home/thyago/.gradle/caches/transforms-3/231c5d2132ba8179acc6529bb28d4932/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+112            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+112-->[com.google.android.gms:play-services-base:18.1.0] /home/thyago/.gradle/caches/transforms-3/231c5d2132ba8179acc6529bb28d4932/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+113            android:exported="false"
+113-->[com.google.android.gms:play-services-base:18.1.0] /home/thyago/.gradle/caches/transforms-3/231c5d2132ba8179acc6529bb28d4932/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+114-->[com.google.android.gms:play-services-base:18.1.0] /home/thyago/.gradle/caches/transforms-3/231c5d2132ba8179acc6529bb28d4932/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+115
+116        <meta-data
+116-->[com.google.android.gms:play-services-basement:18.1.0] /home/thyago/.gradle/caches/transforms-3/d2d31fbb04f0236b845890d339a84917/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+117            android:name="com.google.android.gms.version"
+117-->[com.google.android.gms:play-services-basement:18.1.0] /home/thyago/.gradle/caches/transforms-3/d2d31fbb04f0236b845890d339a84917/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+118            android:value="@integer/google_play_services_version" />
+118-->[com.google.android.gms:play-services-basement:18.1.0] /home/thyago/.gradle/caches/transforms-3/d2d31fbb04f0236b845890d339a84917/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+119
+120        <uses-library
+120-->[androidx.window:window:1.0.0-beta04] /home/thyago/.gradle/caches/transforms-3/0b18acd6f94d30ed2643a810c4531bfb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+121            android:name="androidx.window.extensions"
+121-->[androidx.window:window:1.0.0-beta04] /home/thyago/.gradle/caches/transforms-3/0b18acd6f94d30ed2643a810c4531bfb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+122            android:required="false" />
+122-->[androidx.window:window:1.0.0-beta04] /home/thyago/.gradle/caches/transforms-3/0b18acd6f94d30ed2643a810c4531bfb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+123        <uses-library
+123-->[androidx.window:window:1.0.0-beta04] /home/thyago/.gradle/caches/transforms-3/0b18acd6f94d30ed2643a810c4531bfb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+124            android:name="androidx.window.sidecar"
+124-->[androidx.window:window:1.0.0-beta04] /home/thyago/.gradle/caches/transforms-3/0b18acd6f94d30ed2643a810c4531bfb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+125            android:required="false" />
+125-->[androidx.window:window:1.0.0-beta04] /home/thyago/.gradle/caches/transforms-3/0b18acd6f94d30ed2643a810c4531bfb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+126
+127        <provider
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+128            android:name="androidx.startup.InitializationProvider"
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
+129            android:authorities="com.example.flutter_app_great_places.androidx-startup"
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
+130            android:exported="false" >
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
+131            <meta-data
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+132                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+133                android:value="androidx.startup" />
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+134        </provider>
+135
+136        <receiver
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+137            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+137-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+138            android:directBootAware="false"
+138-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+139            android:enabled="true"
+139-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+140            android:exported="true"
+140-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+141            android:permission="android.permission.DUMP" >
+141-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+142            <intent-filter>
+142-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+143                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+143-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+144            </intent-filter>
+145            <intent-filter>
+145-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+146                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+147            </intent-filter>
+148            <intent-filter>
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+149                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+150            </intent-filter>
+151            <intent-filter>
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+152                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/thyago/.gradle/caches/transforms-3/b6a4fa9569348a64ef74c703f0a2d9e3/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+153            </intent-filter>
+154        </receiver>
+155    </application>
+156
+157</manifest>

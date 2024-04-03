@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.flutter_app_great_places.app-mergeDebugResources-23:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/thyago/.gradle/caches/transforms-3/53e1c90acc2736ef9d388444ed595ca9/transformed/core-1.10.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}
