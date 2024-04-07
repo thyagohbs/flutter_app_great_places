@@ -31,6 +31,7 @@ class PlacesListScreen extends StatelessWidget {
             ),
           ],
         ),
+        /* Responsável em gerir a visualização das listas*/
         body: FutureBuilder(
           future: Provider.of<GreatPlaces>(context, listen: false).loadPlaces(),
           builder: (context, snapshot) {
