@@ -10,8 +10,8 @@ class MapScreen extends StatefulWidget {
   MapScreen({
     this.inititalPlacelocationMap = const PlaceLocationMap(
       placeLocation: PlaceLocation(
-        latitude: 37.422131,
-        longitude: -122.084801,
+        latitude: 37.422131, // Localização da Sede do google
+        longitude: -122.084801, // Localização da Sede do google
       ),
     ),
     this.isReadonly = false,
