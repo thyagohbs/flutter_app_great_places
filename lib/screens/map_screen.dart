@@ -24,6 +24,7 @@ class MapScreen extends StatefulWidget {
 
 class _MapScreenState extends State<MapScreen> {
   LatLng? _latLng;
+  /* Set = é um tipo que não aceita repetição */
   Set<Marker> positions = {};
 
   @override
